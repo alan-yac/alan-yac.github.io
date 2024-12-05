@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  padding: 36px 18px;
+  background: #ece7e1;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: auto;
+  min-height: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-transform: lowercase;
+}
+
+h1, h2 {
+  font-size: 36px;
+}
+
+h3, p {
+  font-size: 14px;
+}
+
+.abstract-squares {
+  --square-size: 8vmin;
+  display: grid;
+  grid-auto-columns: var(--square-size);
+  grid-auto-rows: var(--square-size);
+  margin: auto 0 auto auto;
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+.abstract-squares span:nth-child(1) {
+  grid-column: 5;
+  grid-row: 1;
+  background: #909790;
+}
+
+.abstract-squares span:nth-child(2) {
+  grid-column: 1;
+  grid-row: 4;
+  background: #034a80;
+}
+
+.abstract-squares span:nth-child(3) {
+  grid-column: 2;
+  grid-row: 4;
+  background: #000103;
+}
+
+.abstract-squares span:nth-child(4) {
+  grid-column: 5;
+  grid-row: 4;
+  background: #be1f24;
+}
+
+.abstract-squares span:nth-child(5) {
+  grid-column: 6;
+  grid-row: 4;
+  background: #000103;
+  margin-left: 6vmin;
+}
+
+.abstract-squares span:nth-child(6) {
+  grid-column: 7;
+  grid-row: 4;
+  background: #000103;
+  margin-right: 2vmin;
+}
+
+.abstract-squares span:nth-child(7) {
+  grid-column: 9;
+  grid-row: 4;
+  background: #fdb721;
+}
+
+.abstract-squares span:nth-child(8) {
+  grid-column: 5;
+  grid-row: 5;
+  background: #909790;
+  margin-top: 2vmin;
+}
+
+.abstract-squares span:nth-child(9) {
+  grid-column: 5;
+  grid-row: 6;
+  background: #909790;
+  margin-bottom: 6vmin;
+}
+
+.event-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
+  grid-gap: 18px;
+  margin-top: 12vmin;
+}
+
+.event-info .artists {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.event-info .events {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-gap: 0 18px;
+}
+
+.event-info .events p {
+  grid-column: 2;
+}
