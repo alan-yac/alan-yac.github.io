@@ -1,0 +1,113 @@
+html {
+    background: #fff;
+    width:100vw;
+    max-width:100%;
+    overflow-x: hidden;
+}
+
+body {
+    background: #fff;
+    font-size: 16px;
+    line-height: 1;
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+   font-family: "Alain-Regular";
+   src: url("Font/Alain-Regular.woff") format("woff");
+}
+
+ @font-face {
+            font-family: "ABCMonument";
+            src: url('Font/ABCMonumentGroteskVariable.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+h1, h2, h3, h4, h5, h6 {
+    color: #222;
+    font-weight: 400;
+    font-family: "Alain-Regular"; 
+    padding: 0;
+    margin: 0;
+    text-rendering: optimizelegibility;
+}
+
+h1{
+    line-height: 0.6;
+    font-size: clamp(200px, 20.5vw, 400px);
+}
+
+h2 {
+    font-size: 110px;
+    font-family: "Alain";
+    font-weight: 400;
+    line-height: 0.6;
+    text-align: center;
+}
+
+
+.hero-section{
+    height:100vh;
+    width: 100vw;
+    background-color:red;
+}
+
+
+p{
+    font-family: "ABCMonument";
+    color:black;
+    font-size:14px;
+    line-height: 1.4;
+}
+
+
+
+.horizontal-scroll-wrapper{
+    height: 55vh;
+    width: auto;
+    min-width:100vw;
+}
+
+img.horizontal-scroll-img {
+    object-fit: cover;
+    object-position: 0% 50%;
+    width: auto;
+    height: 55vh;
+}
+
+.horizontal-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   width: 100vw;
+    max-width: 100%;
+}
+
+.txt-wrapper{
+    width: 33.33vw;
+    text-align: center;
+}
+
+.discover-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    row-gap: 60px;
+}
+
+.discover-content{
+    align-items: center;
+    row-gap: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.discover-button{
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid black;
+    padding: 10px 45px;
+}
