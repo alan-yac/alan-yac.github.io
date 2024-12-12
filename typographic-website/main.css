@@ -11,6 +11,9 @@ body {
     line-height: 1;
     margin: 0px;
     padding: 0px;
+    width:100vw;
+    max-width:100%;
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -39,6 +42,19 @@ h1{
     font-size: clamp(200px, 20.5vw, 400px);
 }
 
+.heading--1{
+    line-height: 0.6;
+    font-size: clamp(300px, 40vw, 600px);
+    text-align: center;
+}
+
+.heading--2{
+    line-height: 0.6;
+    font-size: clamp(200px, 30vw, 500px);
+    text-align: center;
+    color: white;
+}
+
 h2 {
     font-size: 110px;
     font-family: "Alain-Regular";
@@ -64,12 +80,38 @@ h4 {
 }
 
 
+
 .hero-section{
     height:100vh;
     width: 100vw;
-    background-color:red;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+@keyframes logoSizeChange{
+    from {
+        font-size: 280px;
+        line-height:0.72;
+    }
+    to {
+        font-size:140px;
+        line-height: 0.72;
+    }
+}
+
+.logo{
+    text-align: center;
+    font-size: 280px;
+    line-height: 3;
+    animation: logoSizeChange 0.8s ease-out 2s forwards;
+    animation-delay: 1s;
+}
+
+.center-align{
+    text-align: center;
+}
 
 p{
     font-family: "ABCMonument";
@@ -82,21 +124,20 @@ p{
 
 .horizontal-scroll-wrapper{
     height: 55vh;
-    width: 100vw;
-    max-width:100vw;
-    overflow:hidden;
+    width: 180vw;
 }
 
 img.horizontal-scroll-img {
     object-fit: cover;
     object-position: 0% 50%;
-    width: auto;
+    width: 180vw;
     height: 55vh;
+    overflow: hidden;
 }
 
 .horizontal-section{
     display: flex;
-    align-items: center;
+    align-items: left;
     flex-direction: column;
    width: 100vw;
     max-width: 100%;
@@ -123,12 +164,6 @@ img.horizontal-scroll-img {
     flex-direction: column;
 }
 
-.discover-button{
-    background-color: rgba(0, 0, 0, 0);
-    border: 1px solid black;
-    padding: 10px 45px;
-}
-
 .img-box-section{
     display: flex;
     flex-direction: column;
@@ -153,7 +188,6 @@ img.horizontal-scroll-img {
 }
 
 .two-colum-box-text {
-    border: 1px solid black;
     padding: 120px;
     display: flex;
     flex-direction: column;
@@ -162,7 +196,7 @@ img.horizontal-scroll-img {
 }
 
 .bag-ivory{
-    background-image: url("assets/Bag_Ivory.png");
+    background-image: url("assets/bag-ivory-color.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -176,4 +210,46 @@ img.horizontal-scroll-img {
     background-image: url("assets/Bag_Pink.png");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.sroll-section-2{
+    padding: 10vh 40px;
+}
+
+.full-width{
+    width: 100vw;
+    max-width: 100%;
+}
+
+.right-align{
+    text-align: right;
+}
+
+.two-colum--item {
+  position: relative; 
+  overflow: hidden; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: grayscale(100%); 
+  transition: transform 0.5s ease, filter 0.5s ease; 
+}
+
+.two-colum--item:hover {
+  filter: grayscale(0%); 
+}
+
+.hover-content {
+  position: absolute;
+  bottom: -100%; 
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 10px 0;
+  transition: bottom 1s ease; 
+}
+
+.two-colum--item:hover .hover-content {
+  bottom: -3.8%; 
 }
