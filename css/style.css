@@ -53,7 +53,7 @@ body {
   display: flex; /* Enables Flexbox */
   justify-content: center; /* Horizontally centers */
   align-items: center; /* Vertically centers */
-  height: 50vh; /* Ensures the container spans the full viewport */
+  height: 20vh; /* Ensures the container spans the full viewport */
   margin: 0; /* Removes default margins */
 }
 

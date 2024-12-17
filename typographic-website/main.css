@@ -202,12 +202,29 @@ img.horizontal-scroll-img {
 }
 
 .bag-red{
-    background-image: url("assets/Bag_Red.png");
+    background-image: url("assets/bag-red-color.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 .bag-pink{
-    background-image: url("assets/Bag_Pink.png");
+    background-image: url("assets/bag-pink-color.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.shoe-ivory{
+    background-image: url("assets/shoes-ivory-color.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.shoe-red{
+    background-image: url("assets/shoes-red-color.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.shoe-beige{
+    background-image: url("assets/shoes-beige-color.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
