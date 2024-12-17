@@ -79,7 +79,9 @@ h4 {
     text-align: left;
 }
 
-
+.heading--black{
+    color:black !important;
+}
 
 .hero-section{
     height:100vh;
@@ -144,8 +146,10 @@ img.horizontal-scroll-img {
 }
 
 .txt-wrapper{
-    width: 33.33vw;
+    margin-top: 27vh;
+    width: 28vw;
     text-align: center;
+    z-index: 1;
 }
 
 .discover-section{
@@ -269,4 +273,22 @@ img.horizontal-scroll-img {
 
 .two-colum--item:hover .hover-content {
   bottom: -3.8%; 
+}
+
+.txt-box{
+    height: 90vh;
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+
+.txt-bg-img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index:0;
 }
